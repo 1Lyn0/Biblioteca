@@ -1,0 +1,49 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "Ivo Soares",
+      "cpf": "068189498",
+      "datacadastro": "27/10/2025",
+      "endereco": "rua x numero y",
+      "email": "ivo@ivo.com",
+      "tel": "1198984984"
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "cpf": "1684968",
+      "datacadastro": "28/10/2025",
+      "endereco": "rua x numero y",
+      "email": "maria@email.com",
+      "tel": "1198884984"
+    },
+    {
+      "id": "2",
+      "nome": "Joao",
+      "cpf": "149849894",
+      "datacadastro": "28/10/2025",
+      "endereco": "rua xxxx numero y",
+      "email": "joao@email.com",
+      "tel": "1198884984"
+    }
+  ],
+  "livros": [
+    {
+      "id": "ca03",
+      "titulo": "teste1",
+      "autor": "eu",
+      "categoria": "tu",
+      "editora": "haha",
+      "ano": "2025"
+    },
+    {
+      "id": "b638",
+      "titulo": "hjh",
+      "autor": "jkh",
+      "categoria": "knhh",
+      "editora": "nknh",
+      "ano": "2222"
+    }
+  ]
+}
