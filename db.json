@@ -1,6 +1,7 @@
 {
   "alunos": [
     {
+<<<<<<< HEAD
       "nome": "LUCAS EDUARD F CARDOSO",
       "cpf": "493.363.848-99",
       "email": "lucaseduard2015@gmail.com",
@@ -13,10 +14,38 @@
       "email": "29975220@eniac.edu.br",
       "tel": "11953960494",
       "id": "10"
+=======
+      "id": "1",
+      "nome": "Ivo Soares",
+      "cpf": "068189498",
+      "datacadastro": "27/10/2025",
+      "endereco": "rua x numero y",
+      "email": "ivo@ivo.com",
+      "tel": "1198984984"
+    },
+    {
+      "id": "2",
+      "nome": "Maria",
+      "cpf": "1684968",
+      "datacadastro": "28/10/2025",
+      "endereco": "rua x numero y",
+      "email": "maria@email.com",
+      "tel": "1198884984"
+    },
+    {
+      "id": "2",
+      "nome": "Joao",
+      "cpf": "149849894",
+      "datacadastro": "28/10/2025",
+      "endereco": "rua xxxx numero y",
+      "email": "joao@email.com",
+      "tel": "1198884984"
+>>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
     }
   ],
   "livros": [
     {
+<<<<<<< HEAD
       "titulo": "Joao",
       "autor": "Coelho",
       "categoria": "ação",
@@ -31,6 +60,22 @@
       "editora": "eu",
       "ano": 0,
       "id": "ee43"
+=======
+      "id": "ca03",
+      "titulo": "teste1",
+      "autor": "eu",
+      "categoria": "tu",
+      "editora": "haha",
+      "ano": "2025"
+    },
+    {
+      "id": "b638",
+      "titulo": "hjh",
+      "autor": "jkh",
+      "categoria": "knhh",
+      "editora": "nknh",
+      "ano": "2222"
+>>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
     }
   ]
 }

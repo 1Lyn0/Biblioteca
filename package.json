@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+<<<<<<< HEAD
   }
+=======
+  },
+  "name": "biblioteca-mesttra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+>>>>>>> d123596d9d12d3046635a3d64dc7fad4f2b177fe
 }
