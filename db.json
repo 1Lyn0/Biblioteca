@@ -1,18 +1,17 @@
 {
   "alunos": [
     {
-      "id": "2",
-      "nome": "Joao",
-      "cpf": "149849894",
-      "datacadastro": "28/10/2025",
-      "endereco": "rua xxxx numero y",
-      "email": "joao@email.com",
-      "tel": "1198884984"
-    },
-    {
       "id": "5636",
       "nome": "LUCAS EDUARD F CARDOSO",
       "cpf": "1684968",
+      "email": "299752020@eniac.edu.br",
+      "tel": "11953960494",
+      "datacadastro": "2026-01-14"
+    },
+    {
+      "id": "c295",
+      "nome": "João ",
+      "cpf": "000000000",
       "email": "299752020@eniac.edu.br",
       "tel": "11953960494",
       "datacadastro": "2026-01-14"
