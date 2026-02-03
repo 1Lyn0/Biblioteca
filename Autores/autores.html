@@ -2,12 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Edição de Livro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestra Biblioteca - Autores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- Menu de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a href="../index.html" class="navbar-brand fw-bold fs-4">
@@ -19,22 +20,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+
+
+                    <!-- Link home menu -->
+
                     <li class="nav-item">
                         <a href="../index.html" class="nav-link active">
                             <i class="bi bi-house-fill me-1"></i>
                             Home
                         </a>
                     </li>
+
+
+                    <!-- section de cadastros -->
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggler" role="button" data-bs-toggle="dropdown">
                         <i class="bi bi-person-plus-fill me-1"></i>
                             Cadastros
                         </a>
+
+                        <!-- links dos cadastros -->
+
                         <ul class="dropdown-menu">
                             <div class="row">
                                 <div class="col">
                                     <li><a href="./aluno.html" class="dropdown-item">
-                                    <i class="bi bi-person-badge me-2"></i>Alunos
+                                    <i class="bi bi-person-badge me-2"></i>Aluno
                                     </a></li>
                                     <li><a class="dropdown-item" href="/frontend/cadastro/autor.html">
                                     <i class="bi bi-pen me-2"></i>Autores
@@ -45,13 +57,21 @@
                                     <li><a class="dropdown-item" href="/frontend/cadastro/editora.html">
                                         <i class="bi bi-building me-2"></i>Editoras
                                     </a></li>
+
                                     <li><a class="dropdown-item" href="/livros/livros.html">
+
+                                    <li><a class="dropdown-item" href="../livros/livros.html">
+
                                         <i class="bi bi-book me-2"></i>Livros
                                     </a></li>
                                 </div>
                             </div>
                         </ul>
                     </li>
+
+
+                    <!-- section de empréstimos -->
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggler" role="button" data-bs-toggle="dropdown">
                         <i class="bi bi-arrow-left-right me-1"></i>
@@ -71,65 +91,53 @@
         </div>
     </nav>
 
-=======
-</head>
-<body>
+
+    <main class="container my-5 flex-grow-1">
+
+    <!-- Conteudo Principal -->
+    <main class="container my-5 flex-grow-1">
+        <!-- Cabeçalho da pagina -->
+
+        <section class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="fw-bold">Gerenciamento de Autores</h1>
+                <p class="text-muted mb-0">Cadastre e consulte os autores do sistema.</p>
+            </div>
+            <a href="./cadastro.html" class="btn btn-success btn-lg">Novo Autor</a>
+        </section>
 
 
-<main class="container my-5">
-    <h1 class="fw-bold mb-4">Editar Livro</h1>
-<div class="card shadow-sm border-0">
-    <div class="card-header bg-warning text-dark fw-bold">
-            Alterar Dados
-        </div>
-        <div class="card-body">
-            <form onsubmit="atualizarLivro(event)">
-                <input type="hidden" id="id">
 
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label class="form-label">Título</label>
-                        <input type="text" id="titulo" class="form-control" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label">Autor</label>
-                        <input type="text" id="autor" class="form-control" required>
-                    </div>
+        <!-- Tabela de alunos -->
+
+        <section class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0 fw-bold">Listagem de Autores cadastrados.</h5>
+            </div>
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome Completo</th>
+                                <th>Nacionalidade</th>
+                                <th>Período/Epoca</th>
+                                <th>Gênero Literário Principal</th>
+                                <th>Data de cadastro</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaResultado">
+                        </tbody>
+                    </table>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="row mb-4">
-                    <div class="col-md-4">
-                        <label class="form-label">Categoria</label>
-                        <input type="text" id="categoria" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label">Editora</label>
-                        <input type="text" id="editora" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label">Ano</label>
-                        <input type="number" id="ano" class="form-control">
-                    </div>
-                </div>
-
-
-                <button class="btn btn-success">Salvar</button>
-                
-                <button class="btn btn-warning text-white">Voltar</button>
-
-                <a href="livros.html" class="btn btn-secondary">Cancelar</a>
-            </form>
-        </div>
-    </div>
-</main>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="edicao-livro.js"></script>
-
-
-<script src="edicao-livro.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./autores.js"></script>
 </body>
 </html>
